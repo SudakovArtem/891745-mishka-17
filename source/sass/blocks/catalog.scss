@@ -1,0 +1,31 @@
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.catalog__card-product {
+  margin: 0 auto 30px;
+}
+
+@media (min-width: $tablet) {
+  .catalog {
+    padding-top: 80px;
+  }
+
+  .catalog__card-product {
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog {
+    padding-top: 129px;
+    padding-bottom: 3px;
+  }
+
+  .catalog__card-product {
+    margin: 0 0 54px;
+  }
+}

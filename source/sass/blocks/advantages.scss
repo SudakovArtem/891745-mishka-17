@@ -1,0 +1,29 @@
+.advantages {
+  padding-top: 24px;
+  padding-bottom: 6px;
+}
+
+.advantages__title {
+  margin-top: 4px;
+  margin-bottom: 31px;
+}
+
+@media (min-width: $tablet) {
+  .advantages {
+    padding-bottom: 25px;
+  }
+
+  .advantages__title {
+    margin-top: 26px;
+    margin-bottom: 48px;
+    margin-left: -5px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .advantages {
+    padding-left: 225px;
+    padding-top: 33px;
+    padding-bottom: 30px;
+  }
+}

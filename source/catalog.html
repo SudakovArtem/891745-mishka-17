@@ -12,8 +12,8 @@
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="header">
-    <nav class="main-nav">
+  <header class="header container">
+    <nav class="main-nav main-nav--no-js">
       <div class="main-nav__logo-wrapper">
         <a class="main-nav__logo header-logo" href="index.html" aria-label="Мишка">
           <picture>
@@ -63,10 +63,8 @@
   </header>
 
   <main class="main">
-    <header class="main__header">
-      <div class="container">
+    <header class="main__header container">
         <h1 class="main__title">Каталог товаров</h1>
-      </div>
     </header>
     <div class="container">
       <div class="catalog">
@@ -138,7 +136,7 @@
           </a>
           <div class="card-product__description-wrapper">
             <h3 class="card-product__title">
-              <a class="card-product__link" href="#">Большая корзинка для игрушек</a>
+              <a class="card-product__link" href="#">Большая корзинка для&nbsp;игрушек</a>
             </h3>
             <p class="card-product__description">Диаметр 30 см, высота 30 см</p>
             <div class="card-product__price-wrapper">
@@ -172,7 +170,7 @@
     <div class="footer__container container">
       <a class="footer__logo footer-logo" href="index.html" aria-label="Мишка">
         <svg class="footer-logo__image" width="102" height="34">
-          <use xlink:href="#logo-footer"></use>
+          <use xlink:href="#icon-logo-footer"></use>
         </svg>
       </a>
       <ul class="social-links">
@@ -215,16 +213,17 @@
       <fieldset class="form-cart__fieldset">
         <legend class="form-cart__legend">Выберите размер:</legend>
         <div class="form-cart__input-wrapper">
-          <input class="form-cart__radio" type="radio" id="size-s" name="size" value="1" checked>
+          <input class="form-cart__radio visually-hidden" type="radio" id="size-s" name="size" value="1" checked>
           <label class="form-cart__label" for="size-s">S</label>
-          <input class="form-cart__radio" type="radio" id="size-m" name="size" value="2">
+          <input class="form-cart__radio visually-hidden" type="radio" id="size-m" name="size" value="2">
           <label class="form-cart__label" for="size-m">M</label>
-          <input class="form-cart__radio" type="radio" id="size-l" name="size" value="3">
+          <input class="form-cart__radio visually-hidden" type="radio" id="size-l" name="size" value="3">
           <label class="form-cart__label" for="size-l">L</label>
         </div>
       </fieldset>
       <button class="form-cart__button button button--green" type="submit">Добавить</button>
     </form>
   </div>
+  <script src="js/index.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+.footer-logo {
+  width: 102px;
+  height: 34px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer-logo__image {
+  width: 102px;
+  height: 34px;
+
+  .footer-logo[href]:hover &,
+  .footer-logo[href]:active & {
+    fill: #46c1ae;
+  }
+}
+
+@media (min-width: $tablet) {
+  .footer-logo {
+    height: 42px;
+  }
+}

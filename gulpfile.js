@@ -17,24 +17,17 @@ const htmlmin = require ("gulp-htmlmin");
 const jsmin = require("gulp-jsmin");
 const babel = require("gulp-babel");
 const svgstore = require("gulp-svgstore");
-const webp = require("gulp-webp");
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/img/icon/icon-*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"));
-});
-
-  gulp.task("images", () => gulp.src("source/img/**/*.{png,jpg,svg}")
+gulp.task("images", () => gulp.src("source/img/**/*.{png,jpg,svg}")
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
     imagemin.jpegtran({progressive: true}),
@@ -102,6 +95,7 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
+  "sprite",
   "html",
   "compress"));
 

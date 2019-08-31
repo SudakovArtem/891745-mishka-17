@@ -1,0 +1,43 @@
+.header-logo {
+  display: block;
+  width: 86px;
+  height: 35px;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+}
+
+.header-logo__image {
+  display: block;
+  width: 86px;
+  height: 35px;
+}
+
+@media (min-width: $tablet) {
+  .header-logo {
+    width: 112px;
+    height: 46px;
+  }
+
+  .header-logo__image {
+    width: 112px;
+    height: 46px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .header-logo {
+    width: 150px;
+    height: 75px;
+  }
+
+  .header-logo__image {
+    width: 150px;
+    height: 75px;
+  }
+}

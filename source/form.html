@@ -12,8 +12,8 @@
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="header">
-    <nav class="main-nav">
+  <header class="header container">
+    <nav class="main-nav main-nav--no-js">
       <div class="main-nav__logo-wrapper">
         <a class="main-nav__logo header-logo" href="index.html" aria-label="Мишка">
           <picture>
@@ -63,13 +63,10 @@
   </header>
 
   <main class="main">
-    <header class="main__header">
-      <div class="container">
+    <header class="main__header container">
         <h1 class="main__title">Вязание на заказ</h1>
-      </div>
     </header>
-
-    <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+    <form class="form-feedback container" action="https://echo.htmlacademy.ru" method="post">
       <p class="form-feedback__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните
         простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <div class="form-feedback__block-wrapper">
@@ -79,12 +76,11 @@
           </legend>
           <div class="form-feedback__container form-feedback__container--type">
             <p class="form-feedback__input-wrapper form-feedback__input-wrapper--type">
-              <input class="form-feedback__radio" type="radio" id="interior" name="type" value="1"
-                checked>
+              <input class="form-feedback__radio visually-hidden" type="radio" id="interior" name="type" checked>
               <label class="form-feedback__label-radio" for="interior">Аксессуар для интерьера</label>
             </p>
             <p class="form-feedback__input-wrapper form-feedback__input-wrapper--type">
-              <input class="form-feedback__radio" type="radio" id="toy" value="2" name="type">
+              <input class="form-feedback__radio visually-hidden" type="radio" id="toy" name="type">
               <label class="form-feedback__label-radio" for="toy">Детская игрушка</label>
             </p>
           </div>
@@ -98,29 +94,29 @@
           </legend>
           <div class="form-feedback__container form-feedback__container--color">
             <p class="form-feedback__input-wrapper form-feedback__input-wrapper--color">
-              <input class="form-feedback__checkbox" type="checkbox" id="color-white" name="color-white"
+              <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="color-white" name="color-white"
                 checked>
               <label class="form-feedback__label-checkbox" for="color-white">Белый</label>
             </p>
             <p class="form-feedback__input-wrapper form-feedback__input-wrapper--color">
-              <input class="form-feedback__checkbox" type="checkbox" id="color-gray" name="color-gray"
+              <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="color-gray" name="color-gray"
                 checked>
               <label class="form-feedback__label-checkbox" for="color-gray">Серый</label>
             </p>
             <p class="form-feedback__input-wrapper form-feedback__input-wrapper--color">
-              <input class="form-feedback__checkbox" type="checkbox" id="color-tiffany" name="color-tiffany">
+              <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="color-tiffany" name="color-tiffany">
               <label class="form-feedback__label-checkbox" for="color-tiffany">«Тиффани»</label>
             </p>
             <p class="form-feedback__input-wrapper form-feedback__input-wrapper--color">
-              <input class="form-feedback__checkbox" type="checkbox" id="color-black" name="color-black">
+              <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="color-black" name="color-black">
               <label class="form-feedback__label-checkbox" for="color-black">Черный</label>
             </p>
             <p class="form-feedback__input-wrapper form-feedback__input-wrapper--color">
-              <input class="form-feedback__checkbox" type="checkbox" id="color-pink" name="color-pink">
+              <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="color-pink" name="color-pink">
               <label class="form-feedback__label-checkbox" for="color-pink">Розовый</label>
             </p>
             <p class="form-feedback__input-wrapper form-feedback__input-wrapper--color">
-              <input class="form-feedback__checkbox" type="checkbox" id="color-orange" name="color-orange">
+              <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="color-orange" name="color-orange">
               <label class="form-feedback__label-checkbox" for="color-orange">Оранжевый</label>
             </p>
           </div>
@@ -195,7 +191,7 @@
     <div class="footer__container container">
       <a class="footer__logo footer-logo" href="index.html" aria-label="Мишка">
         <svg class="footer-logo__image" width="102" height="34">
-          <use xlink:href="#logo-footer"></use>
+          <use xlink:href="#icon-logo-footer"></use>
         </svg>
       </a>
       <ul class="social-links">
@@ -231,5 +227,6 @@
       </p>
     </div>
   </footer>
+  <script src="js/index.min.js"></script>
 </body>
 </html>

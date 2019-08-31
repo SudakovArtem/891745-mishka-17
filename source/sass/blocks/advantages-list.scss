@@ -1,0 +1,140 @@
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.advantages__list-item {
+  position: relative;
+  width: 260px;
+  padding-top: 54px;
+  padding-bottom: 29px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/icon-feature-money.svg");
+    background-size: 47px 27px;
+  }
+
+  &--ecology {
+    &::before {
+      left: 8px;
+      top: 0;
+      width: 32px;
+      height: 37px;
+      background-image: url("../img/icon-feature-flower.svg");
+      background-size: 32px 37px;
+    }
+  }
+
+  &--style {
+    &::before {
+      left: 0;
+      top: 0;
+      width: 47px;
+      height: 27px;
+      background-image: url("../img/icon-feature-money.svg");
+      background-size: 47px 27px;
+    }
+  }
+
+  &--likes {
+    &::before {
+      left: 7px;
+      top: 6px;
+      width: 33px;
+      height: 28px;
+      background-image: url("../img/icon-feature-heart.svg");
+      background-size: 33px 28px;
+    }
+  }
+
+  &--handmade {
+    &::before {
+      left: 3px;
+      top: 3px;
+      width: 34px;
+      height: 34px;
+      background-image: url("../img/icon-feature-ball.svg");
+      background-size: 34px 34px;
+    }
+  }
+
+  &--support {
+    &::before {
+      left: -5px;
+      top: 4px;
+      width: 54px;
+      height: 23px;
+      background-image: url("../img/icon-feature-rocket.svg");
+      background-size: 54px 23px;
+    }
+  }
+
+  &--gift {
+    &::before {
+      left: 3px;
+      top: 2px;
+      width: 33px;
+      height: 32px;
+      background-image: url("../img/icon-feature-gift.svg");
+      background-size: 33px 32px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .advantages-list {
+    justify-content: space-between;
+  }
+
+  .advantages__list-item {
+    padding-bottom: 58px;
+    width: 334px;
+    font-size: 20px;
+    line-height: 22px;
+
+    &--style {
+      order: 2;
+    }
+
+    &--likes {
+      order: 4;
+    }
+
+    &--handmade {
+      order: 1;
+    }
+
+    &--support {
+      order: 3;
+    }
+
+    &--gift {
+      order: 5;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .advantages-list {
+    justify-content: flex-start;
+  }
+
+  .advantages__list-item {
+    width: 351px;
+  }
+}

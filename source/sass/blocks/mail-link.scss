@@ -1,0 +1,27 @@
+.mail-link {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #62d1ba;
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+
+  &:hover {
+    color: #46c1ae;
+    border-bottom-color: #46c1ae;
+  }
+
+  &:active {
+    color: fade(#46c1ae, 30%);
+    border-bottom-color: fade(#46c1ae, 30%);
+  }
+
+  @media (min-width: $tablet) {
+    padding-bottom: 3px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .mail-link {
+    padding-bottom: 3px;
+  }
+}
