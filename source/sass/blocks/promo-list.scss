@@ -12,7 +12,7 @@
   padding: 26px 30px 29px;
   font-size: 19px;
   font-weight: 700;
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
 
   &::before {
@@ -54,15 +54,15 @@
   }
 
   &--interior {
-    background-color: #63d1bb;
+    background-color: $light-green;
 
     &:hover,
     &:active {
-      background-color: #63d1bb;
+      background-color: $light-green;
     }
 
     &::before {
-      background-color: #63d1bb;
+      background-color: $light-green;
     }
 
     &::after {
@@ -75,7 +75,7 @@
   }
 
   &--toy {
-    background-color: #56c3b2;
+    background-color: $dark-green;
 
     &:hover,
     &:active {
@@ -83,7 +83,7 @@
     }
 
     &::before {
-      background-color: #56c3b2;
+      background-color: $dark-green;
     }
 
     &::after {

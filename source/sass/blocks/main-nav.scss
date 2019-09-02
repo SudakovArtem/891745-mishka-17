@@ -3,6 +3,8 @@
   margin: 0 auto;
   min-width: 320px;
   max-width: 1150px;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .main-nav__logo-wrapper {
@@ -33,7 +35,7 @@
     left: 50%;
     width: 28px;
     height: 3px;
-    background-color: #000000;
+    background-color: $black;
   }
 
   &::before {
@@ -53,7 +55,7 @@
       transform: translateX(-50%);
       width: 20px;
       height: 2px;
-      box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+      box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
     }
 
     &::after {
@@ -88,7 +90,7 @@
     justify-content: flex-start;
     flex-grow: 1;
     padding: 21px 50px;
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   .main-nav__toggle {

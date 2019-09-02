@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Мишка — форма заказа</title>
+  <link rel="preload" href="fonts/opensans-regular.woff" as="font">
+  <link rel="preload" href="fonts/opensans-bold.woff" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -12,8 +14,8 @@
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="header container">
-    <nav class="main-nav main-nav--no-js">
+  <header class="header">
+    <nav class="main-nav main-nav--no-js container">
       <div class="main-nav__logo-wrapper">
         <a class="main-nav__logo header-logo" href="index.html" aria-label="Мишка">
           <picture>
@@ -63,11 +65,13 @@
   </header>
 
   <main class="main">
-    <header class="main__header container">
+    <header class="main__header">
+      <div class="main__header__container container">
         <h1 class="main__title">Вязание на заказ</h1>
+      </div>
     </header>
-    <form class="form-feedback container" action="https://echo.htmlacademy.ru" method="post">
-      <p class="form-feedback__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните
+    <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+      <p class="form-feedback__description container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните
         простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <div class="form-feedback__block-wrapper">
         <fieldset class="form-feedback__fieldset form-feedback__fieldset--type container">
@@ -131,11 +135,11 @@
           <div class="form-feedback__container">
             <p class="form-feedback__input-wrapper form-feedback__input-wrapper--name">
               <label class="form-feedback__label" for="firstname">Имя:</label>
-              <input class="form-feedback__input-text" type="text" id="firstname" name="firstname" placeholder="Введите ваше имя*">
+              <input class="form-feedback__input-text" type="text" id="firstname" name="firstname" placeholder="Введите ваше имя*" required>
             </p>
             <p class="form-feedback__input-wrapper form-feedback__input-wrapper--name">
               <label class="form-feedback__label" for="lastname">Фамилия:</label>
-              <input class="form-feedback__input-text" type="text" id="lastname" name="lastname" placeholder="Укажите фамилию*">
+              <input class="form-feedback__input-text" type="text" id="lastname" name="lastname" placeholder="Укажите фамилию*" required>
             </p>
             <p class="form-feedback__input-wrapper form-feedback__input-wrapper--name">
               <label class="form-feedback__label" for="middlename">Отчество:</label>
@@ -152,7 +156,7 @@
               <span class="form-feedback__legend-text">Тел</span>
             </label>
             <p class="form-feedback__input-wrapper form-feedback__input-wrapper--contact">
-              <input class="form-feedback__input-text" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              <input class="form-feedback__input-text" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               <svg class="form-feedback__input-image form-feedback__input-image--phone" width="25" height="24">
                 <use xlink:href="#icon-phone"></use>
               </svg>
@@ -161,7 +165,7 @@
               <span class="form-feedback__legend-text">E-mail</span>
             </label>
             <p class="form-feedback__input-wrapper form-feedback__input-wrapper--contact">
-              <input class="form-feedback__input-text" type="email" id="email" name="email" placeholder="Ваш Email*">
+              <input class="form-feedback__input-text" type="email" id="email" name="email" placeholder="Ваш Email*" required>
               <svg class="form-feedback__input-image form-feedback__input-image--email" width="32" height="32">
                 <use xlink:href="#icon-mail"></use>
               </svg>

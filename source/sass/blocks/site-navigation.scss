@@ -15,7 +15,7 @@
     right: 500px;
     width: calc(50vw - 575px);
     height: 100%;
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   &--closed {
@@ -27,7 +27,7 @@
   display: block;
   padding: 27px 30px 27px 74px;
   border-bottom: 1px solid #ececec;
-  color: #000000;
+  color: $black;
   text-decoration: none;
 
   &[href]:hover {
@@ -63,7 +63,7 @@
     width: 500px;
     border-bottom: 1px solid #ececec;
     font-size: 17px;
-    background-color: #ffffff;
+    background-color: $white;
 
     &::before {
       content: "";

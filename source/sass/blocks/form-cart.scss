@@ -3,7 +3,7 @@
   padding: 31px 30px 46px;
   width: 320px;
   border: 1px solid #c6c6c6;
-  background-color: #ffffff;
+  background-color: $white;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 }
 
@@ -13,7 +13,7 @@
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
-  color: #000000;
+  color: $black;
   text-align: center;
   text-transform: uppercase;
 }
@@ -52,16 +52,16 @@
   }
 
   &:active {
-    border-color: #444444;
+    border-color: $dark-grey;
   }
 }
 
 .form-cart__radio:checked + .form-cart__label {
-  border-color: #63d1bb;
+  border-color: $light-green;
 }
 
 .form-cart__radio:focus + .form-cart__label {
-  outline: 1px dashed #444444;
+  outline: 1px dashed $dark-grey;
 }
 
 @media (min-width: $tablet) {

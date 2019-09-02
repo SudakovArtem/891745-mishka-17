@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Мишка — каталог товаров</title>
+  <link rel="preload" href="fonts/opensans-regular.woff" as="font">
+  <link rel="preload" href="fonts/opensans-bold.woff" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -12,8 +14,8 @@
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="header container">
-    <nav class="main-nav main-nav--no-js">
+  <header class="header">
+    <nav class="main-nav main-nav--no-js container">
       <div class="main-nav__logo-wrapper">
         <a class="main-nav__logo header-logo" href="index.html" aria-label="Мишка">
           <picture>
@@ -63,8 +65,10 @@
   </header>
 
   <main class="main">
-    <header class="main__header container">
+    <header class="main__header">
+      <div class="main__header__container container">
         <h1 class="main__title">Каталог товаров</h1>
+      </div>
     </header>
     <div class="container">
       <div class="catalog">

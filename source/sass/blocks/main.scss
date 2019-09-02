@@ -1,12 +1,10 @@
 .main {
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid $light-gray;
 }
 
 .main__header {
   position: relative;
-  padding-top: 71px;
-  padding-bottom: 76px;
-  background-color: #f1f1f1;
+  background-color: $light-gray;
 
   &::after {
     content: none;
@@ -18,12 +16,17 @@
   }
 }
 
+.main__header__container {
+  padding-top: 71px;
+  padding-bottom: 76px;
+}
+
 .main__title {
   margin: 0;
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
-  color: #000000;
+  color: $black;
   text-align: center;
 }
 
@@ -33,9 +36,6 @@
 
 @media (min-width: $tablet) {
   .main__header {
-    padding-top: 36px;
-    padding-bottom: 79px;
-
     &::after {
       content: "";
       bottom: -12px;
@@ -43,6 +43,11 @@
       background-size: 768px 24px;
       background-position-x: 0;
     }
+  }
+
+  .main__header__container {
+    padding-top: 36px;
+    padding-bottom: 79px;
   }
 
   .main__title {
@@ -57,14 +62,16 @@
 
 @media (min-width: $desktop) {
   .main__header {
-    padding-top: 34px;
-    padding-bottom: 102px;
-
     &::after {
       bottom: -17px;
       height: 34px;
       background-size: 1150px 34px;
     }
+  }
+
+  .main__header__container {
+    padding-top: 34px;
+    padding-bottom: 102px;
   }
 
   .main__title {

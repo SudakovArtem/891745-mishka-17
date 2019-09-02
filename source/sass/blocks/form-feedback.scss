@@ -44,7 +44,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 17px;
-  color: #63d1bb;
+  color: $light-green;
   text-transform: uppercase;
 
   &--phone,
@@ -62,7 +62,7 @@
     flex-grow: 1;
     margin-left: 25px;
     height: 1px;
-    background-color: #63d1bb;
+    background-color: $light-green;
   }
 }
 
@@ -115,7 +115,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
-  color: #000000;
+  color: $black;
 }
 
 .form-feedback__label {
@@ -138,7 +138,7 @@
     height: 40px;
     border-width: 2px;
     border-style: solid;
-    border-color: #444444;
+    border-color: $dark-grey;
     border-radius: 50%;
   }
 
@@ -188,7 +188,7 @@
     height: 40px;
     border-width: 2px;
     border-style: solid;
-    border-color: #444444;
+    border-color: $dark-grey;
   }
 
   &::after {
@@ -200,8 +200,8 @@
     transform: rotate(-45deg);
     width: 20px;
     height: 9px;
-    border-left: 2px solid #444444;
-    border-bottom: 2px solid #444444;
+    border-left: 2px solid $dark-grey;
+    border-bottom: 2px solid $dark-grey;
   }
 
   &:hover::before {
@@ -246,7 +246,7 @@
   min-height: 52px;
   border-width: 0 0 2px 0;
   border-style: solid;
-  border-color: #000000;
+  border-color: $black;
   font-family: inherit;
   font-size: 17px;
   line-height: 18px;
@@ -303,7 +303,7 @@
 
   .form-feedback__block-wrapper {
     &--gray {
-      background-color: #f1f1f1;
+      background-color: $light-gray;
     }
   }
 
@@ -466,6 +466,7 @@
   .form-feedback__button {
     margin: 0;
     width: 230px;
+    flex-shrink: 0;
   }
 }
 

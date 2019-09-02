@@ -23,11 +23,11 @@
   border: 1px solid #ececec;
 }
 
-.card-product:hover {
+.card-product__description-wrapper:hover {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-.card-product:active {
+.card-product__description-wrapper:active {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -36,7 +36,7 @@
   margin-bottom: 5px;
   font-size: 17px;
   font-weight: 700;
-  color: #000000;
+  color: $black;
 }
 
 .card-product__link {
@@ -62,7 +62,7 @@
 .card-product__price {
   margin: 0;
   font-weight: 700;
-  color: #000000;
+  color: $black;
 }
 
 .card-product__button {
@@ -79,7 +79,7 @@
 
   .card-product__button:hover &,
   .card-product__button:active & {
-    fill: #63d1bb;
+    fill: $light-green;
   }
 
   .card-product__button:active & {
