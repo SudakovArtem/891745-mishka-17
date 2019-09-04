@@ -64,6 +64,21 @@
   outline: 1px dashed $dark-grey;
 }
 
+.form-cart__button {
+  background-color: $light-green;
+  border: none;
+  color: $white;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $dark-green;
+  }
+}
+
 @media (min-width: $tablet) {
   .form-cart {
     width: 568px;
